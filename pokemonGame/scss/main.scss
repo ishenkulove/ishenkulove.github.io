@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.item {
+  height: 100vh;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+  flex-basis: 30%;
+  transition: all 0.4s;
+}
+
+.item:hover {
+  flex-basis: 150%;
+}
+.item-1 {
+  background-color: red;
+}
+.item-2 {
+  background-color: blue;
+}
+.item-3 {
+  background-color: black;
+}
+.item-4 {
+  background-color: yellow;
+}
+.item-5 {
+  background-color: purple;
+}
+.item-6 {
+  background-color: green;
+}
+.item-7 {
+  background-color: pink;
+}
+.item-8 {
+  background-color: brown;
+}
+.item-9 {
+  background-color: yellowgreen;
+}
+.item-10 {
+  background-color: aqua;
+}
+.item-11 {
+  background-color: orange;
+}
+.item-12 {
+  background-color: gray;
+}
