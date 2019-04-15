@@ -1,0 +1,45 @@
+.header
+ &-menu
+  display: flex
+  flex-direction: column
+  width: 5.5%
+  background: $active-color
+  z-index: 2
+  &__logo
+   margin-top: 15%
+   display: flex
+   justify-content: center
+   padding-left: 18%
+   &-adaptive 
+    display: none
+  &__nav
+   display: flex
+   flex-direction: column
+   margin-top: 100%
+   height: 62%
+   justify-content: space-around 
+   align-items: center
+
+@media (max-width: 800px)
+ .header
+  overflow: hidden
+  &-menu 
+   width: 100%
+   height: 10vh
+   &__logo
+    display: flex
+    margin: 0
+    padding: 0px 5px 0px 5px
+    align-items: center
+    justify-content: space-between
+    &-adaptive
+     display: block
+   &__nav
+    flex-direction: row
+    background: $active-color
+    margin-top: 10px
+    padding-top: 5px
+    // margin-left: 1000px
+    transition: all 0.8s
+    &.active
+     margin-left: 0px

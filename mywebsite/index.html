@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>My web site</title>
+ <link rel="stylesheet" href="styles/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+</head>
+<body>
+
+<div id="page-preloader" class="preloader">
+  <div class="re">
+    <img class="img" src="images/profile-logo.svg" alt="">
+    <div class="loader"></div>
+  </div>
+</div>
+
+ <!-- начало сайта(главная страница) -->
+ <header class="header">
+  <!-- меню -->
+  <div class="header-menu">
+   <div class="header-menu__logo">
+    <img src="images/profile-logo.svg" alt="">
+    <img class="header-menu__logo-adaptive" src="images/menu-adaptive.svg" alt="">
+   </div>
+   <div class="header-menu__nav">
+    <a href="index.html"><img src="images/home-active-icon.svg" alt=""></a>
+    <a href="about-my.html"><img src="images/about-me.svg" alt=""></a>
+    <a href="works.html"><img src="images/works.svg" alt=""></a>
+    <a href="contacts.html"><img src="images/contacts.svg" alt=""></a>
+   </div>
+  </div>
+
+  <!-- вторая часть главной страницы -->
+  <div class="header-box">
+   <div class="box">
+    <div class="box-ex">
+     <img src="images/box-ex.svg" alt="">
+    </div>
+    <div class="box-info">
+     <div class="box-info__name">
+     Ishenkulov Adil
+     <span class="box-info__dev">
+      front-end developer
+     </span>
+     </div>
+    </div>
+    <div class="box-img">
+     <div class="box-img__my">
+      <img src="images/home/my-photo.svg" alt="">
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <!-- задний фон -->
+  <div class="header-things">
+   <img src="images/home/bg-line.svg" alt="" class="header-things__line">
+   <img src="images/home/circle-bg.svg" alt="" class="header-things__circle">
+  </div>
+
+  <!-- Кнопки -->
+  <div class="header-btn">
+   <button class="header-btn__ru">ru</button>
+   <button class="header-btn__en">en</button>
+  </div>
+ </header>
+ 
+
+
+ <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+ <script>
+  $(document).ready(function () {
+   $('.header-menu__logo-adaptive').click(function () {
+    $('.header-menu__nav').toggleClass('active')
+   })
+  })</script>
+
+  <script src="scripts/loader.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+.header
+ &-box 
+  .box
+   &-works 
+    display: flex
+    width: 100%
+    &__center
+     display: flex
+     width: 95%
+     align-items: center
+     justify-content: center
+     flex-direction: column
+     &-text 
+      margin-top: 2%
+      padding-bottom: 5px
+      justify-content: center
+      font-family: 'Sarala', sans-serif
+      font-size: 18px
+      color: white
+     &-box 
+      display: flex
+      background: $box-works-color
+      width: 85%
+      height: 80%
+      border-radius: 10px
+     &-circle 
+      display: flex
+      width: 20%
+      align-items: center
+      margin-top: 2%
+      justify-content: center
+      .box-circle
+       margin-left: 5%
+       width: 5px
+       height: 5px
+       border-radius: 50%
+       background: white
+      .active-circle
+       width: 10px
+       height: 10px
+    &__arrow
+     display: flex
+     margin-left: -3%
+     align-items: center
+     img
+      max-width: 100%
+      cursor: pointer

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>My web site</title>
+ <link rel="stylesheet" href="styles/main.css">
+ <link href="https://fonts.googleapis.com/css?family=Sarala" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Waiting+for+the+Sunrise" rel="stylesheet">
+</head>
+
+<body>
+ <!-- начало сайта(главная страница) -->
+ <header class="header">
+  <!-- меню -->
+  <div class="header-menu">
+   <div class="header-menu__logo">
+    <img src="images/profile-logo.svg" alt="">
+   </div>
+   <div class="header-menu__nav">
+    <a href="index.html"><img src="images/home-icon.svg" alt=""></a>
+    <a href="about-my.html"><img src="images/about-me.svg" alt=""></a>
+    <a href="works.html"><img src="images/works/works-active-icon.svg" alt=""></a>
+    <a href="contacts.html"><img src="images/contacts.svg" alt=""></a>
+   </div>
+  </div>
+
+  <div id="page-preloader" class="preloader">
+   <div class="re">
+    <img class="img" src="images/profile-logo.svg" alt="">
+    <div class="loader"></div>
+   </div>
+  </div>
+
+
+  <!-- вторая часть главной страницы -->
+  <div class="header-box">
+   <div class="box-big">
+    <!-- типа excape -->
+    <div class="box-ex">
+     <img src="images/box-ex.svg" alt="">
+    </div>
+    <!-- Внутренность works -->
+    <div class="box-works">
+     <div class="box-works__center">
+      <div class="box-works__center-text">
+       Click the logo to open project
+      </div>
+
+      <div class="box-works__center-box">
+       <div class="box-works__center-box-box"></div>
+      </div>
+
+      <div class="box-works__center-circle">
+       <div class="box-circle active-circle"></div>
+       <div class="box-circle"></div>
+       <div class="box-circle"></div>
+       <div class="box-circle"></div>
+       <div class="box-circle"></div>
+       <div class="box-circle"></div>
+      </div>
+     </div>
+
+     <div class="box-works__arrow">
+      <img src="images/works/works-arrow.svg" alt="">
+     </div>
+    </div>
+   </div>
+  </div>
+ </header>
+
+ <script src="scripts/loader.js"></script>
+</body>
+</html>
