@@ -1,0 +1,103 @@
+.price-block 
+   height: 1200px
+   background: rgba($price-bg,.3)
+   display: flex
+   width: 100%
+   align-items: center
+   justify-content: center
+   margin-top: 10%
+   
+   .price-top
+      text-align: center
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      margin-bottom: 8%
+
+      &__title 
+         color: $color-text
+         font-family: "Open Sans", sans-serif
+         font-size: 30px
+         font-weight: 700
+         line-height: 65px
+      &__subtitle
+         color: $color-text
+         font-size: 15px
+         font-family: "Open Sans", sans-serif
+         letter-spacing: 2px
+         font-weight: 400
+         max-width: 800px
+   .price-box
+      display: flex
+      justify-content: space-between
+      align-items: center
+      height: 600px
+
+      &__off
+         height: 100%
+         width: 30%
+         background: $bg-services
+         cursor: pointer
+         transition: all .3s
+
+         &:hover 
+            box-shadow: 0 3px 25px rgba(0, 0, 0, 0.35)
+            background: $bg-services
+            transform: scale(1.05)
+
+         .price-box__top
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 35%
+            background: $dark-blue
+            clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+
+            .price-box__title
+               color: #ffffff
+               font-family: "Open Sans"
+               font-size: 25px
+               font-weight: 400
+               line-height: 22px
+               margin-bottom: 39px
+            .price-box__price
+               color: #ffffff
+               font-family: "Open Sans"
+               font-size: 17px
+               font-weight: 400
+               line-height: 22px
+               letter-spacing: 0.85px
+
+               sup 
+                  font-size: 25px
+                  letter-spacing: 1.25px
+               
+               span 
+                  font-size: 45px
+                  line-height: 22px
+                  letter-spacing: 2.5px
+         .price-menu
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 50%
+            text-align: center
+
+            &__text 
+               span
+                  color: gray
+                  font-family: "Open Sans"
+                  font-size: 17px
+                  font-weight: 300
+                  line-height: 22px
+                  letter-spacing: 0.85px
+               hr 
+                  width: 180px
+                  margin: 10px 0px 20px 0px
+         .price-btn 
+            display: flex
+            align-items: center
+            justify-content: center
+   
