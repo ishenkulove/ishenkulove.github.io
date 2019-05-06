@@ -1,0 +1,114 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+
+section {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 72px;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+}
+
+.burger-menu__button {
+   position: fixed;
+   width: 80px;
+   height: 80px;
+   background: #2a2a2a;
+   top: 10px;
+   left: 10px;
+   border-radius: 50%;
+   z-index: 30;
+   transition: all .5s;
+}
+
+.burger-menu__button:hover .burger-menu__lines {
+   filter: brightness(.7);
+}
+
+.burger-menu__lines,
+.burger-menu__lines::before,
+.burger-menu__lines::after {
+   position: absolute;
+   background: white;
+   width: 40px;
+   height: 6px;
+   transition: all .5s;
+}
+
+.burger-menu__lines {
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.burger-menu__lines::before {
+   content: "";
+   top: -12px;
+}
+
+.burger-menu__lines::after {
+   content: "";
+   top: 12px;
+}
+
+.burger-menu__active .burger-menu__lines {
+   background: transparent;
+}
+
+.burger-menu__active .burger-menu__lines::before {
+   top: 0;
+   transform: rotate(-2205deg);
+   -webkit-transform: rotate(-2205deg);
+   -moz-transform: rotate(-2205deg);
+   -ms-transform: rotate(-2205deg);
+   -o-transform: rotate(-2205deg);
+}
+
+.burger-menu__active .burger-menu__lines::after {
+   top: 0;
+   transform: rotate(2205deg);
+   -webkit-transform: rotate(2205deg);
+   -moz-transform: rotate(2205deg);
+   -ms-transform: rotate(2205deg);
+   -o-transform: rotate(2205deg);
+}
+
+.burger-menu__nav {
+   display: flex;
+   flex-flow: column;
+   position: fixed;
+   height: 100vh;
+   width: 100vw;
+   align-items: center;
+   justify-content: center;
+   z-index: 20;
+   background: #2a2a2a;
+   top: -110%;
+   left: -110%;
+   transition: all .5s;
+}
+
+.burger-menu__active .burger-menu__nav {
+   top: 0;
+   left: 0;
+}
+
+.burger-menu__link {
+   font-size: 32px;
+   padding: 30px;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: white;
+   letter-spacing: 5px;
+   transition: all .3s;
+}
+
+.burger-menu__link:hover {
+   color: gold;
+   padding-left: 100px;
+}
