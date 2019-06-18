@@ -1,0 +1,20 @@
+.more-btn {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-transform: uppercase;
+  background: $color-white;
+  color: $color-black;
+  img {
+    margin: 0px -10px 0px 5px;
+    padding: 4px;
+    background: $color-primary-light;
+  }
+
+  &:link {
+    text-decoration: none;
+    color: $color-black;
+  }
+}

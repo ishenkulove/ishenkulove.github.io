@@ -1,0 +1,61 @@
+.section-scoreboard {
+  margin-top: 0.6%;
+  height: 12vh;
+  .scoreboard {
+    padding: 1% 10%;
+    height: 12vh;
+    background: $color-gray-light;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .team-soccer {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      .team-name {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        font-size: 20px;
+
+        img {
+          width: 50px;
+        }
+      }
+      .team-goals {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $color-gray;
+        font-size: 14px;
+      }
+    }
+
+    .score {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: $color-gray;
+      padding: 0.5% 1%;
+
+      .score-score {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .scoreboard {
+    margin-top: 4px;
+  }
+}
+@media (max-width: 995px) {
+  .section-scoreboard {
+    margin-top: -90px;
+    margin-bottom: 2%;
+  }
+}

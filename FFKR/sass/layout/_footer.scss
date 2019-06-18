@@ -1,0 +1,41 @@
+.footer {
+  height: 55vh;
+  background: $color-black-light;
+
+  &__sponsors {
+    display: flex;
+    justify-content: space-around;
+    .pictures {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 47%;
+      margin-bottom: 3%;
+    }
+  }
+
+  .footer-contacts {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-size: 14px;
+    color: $color-gray-dark;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer {
+    height: 65vh;
+    .footer__sponsors {
+      // border: 2px solid red;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      .pictures {
+        display: flex;
+        width: 100%;
+      }
+    }
+  }
+}

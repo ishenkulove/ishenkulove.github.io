@@ -1,0 +1,24 @@
+.hover-video {
+  display: none;
+}
+.team-people:hover .hover-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: rgba($color-primary, 0.7);
+
+  .open-video {
+    text-align: center;
+    font-size: 24px;
+    color: $color-primary;
+    background: white;
+    width: 50%;
+    height: 20%;
+    border-radius: 10px;
+  }
+}

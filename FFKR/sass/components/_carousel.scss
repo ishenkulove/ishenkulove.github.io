@@ -1,0 +1,33 @@
+.d-block {
+  background-size: cover;
+  height: 88vh;
+}
+.news {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  padding: 0px 10px;
+
+  .top {
+    width: 35%;
+    height: 18%;
+    background: $color-white;
+  }
+  .bottom {
+    position: relative;
+    width: 35%;
+    height: 10%;
+    background: $color-gray-light;
+    margin-bottom: 2%;
+    border-bottom: 5px solid $color-primary-light;
+  }
+}
+
+@media (max-width: 1200px) {
+  .news {
+    width: 1300px;
+  }
+}
