@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Autocomplete</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <form autocomplete="off"  class="form" id="form">
+         <div class="autocomplete" style="width:300px;">
+            <input id="myInput" class="myInput" type="text" name="myCountry" placeholder="Heroes" />
+         </div>
+         <a href="" class="link-dotawiki" id="link">
+          <input type="submit" value="search hero" />
+        </a>
+      </form>
+    </header>
+
+    <script src="script/autocomplete.js"></script>
+    <script src="script/heroesName.json"></script>
+    <script src="script/script.js"></script>
+    <script>
+      // autocomplete(document.getElementById("myInput"), heroes);
+    </script>
+  </body>
+</html>
