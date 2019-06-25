@@ -46,8 +46,7 @@
               })
               link.addEventListener("click", function (params) {
                 let search = element.value.replace(/\s/, '-')
-                form.setAttribute('action', 'https://dota2.ru/heroes/' + search)
-                
+                window.open('https://dota2.ru/heroes/' + search)
               })
               box.appendChild(search)
             }
