@@ -27,7 +27,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-image: url("../../images/background/main-background.png");
+  background-image: url("../images/background/main-background.png");
   background-size: cover;
 }
 
@@ -35,14 +35,14 @@ body {
   font-family: "Noteworthy";
   font-style: normal;
   font-weight: normal;
-  src: url("../../typography/Noteworthy-Lt.ttf");
+  src: url("../typography/Noteworthy-Lt.ttf");
 }
 
 @font-face {
   font-family: "Proxima Soft Black";
   font-style: bold;
   font-weight: bold;
-  src: url("../../typography/Mark Simonson - Proxima Soft Black.ttf");
+  src: url("../typography/Mark Simonson - Proxima Soft Black.ttf");
 }
 
 @font-face {
@@ -56,7 +56,7 @@ body {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: normal;
-  src: url("../../typography/Mark Simonson - Proxima Soft.ttf");
+  src: url("../typography/Mark Simonson - Proxima Soft.ttf");
 }
 
 .heading-primary {
@@ -135,7 +135,7 @@ body {
   width: 1172px;
   height: 681px;
   background-size: cover;
-  background-image: url("../../images/background/registration.png");
+  background-image: url("../images/background/registration.png");
 }
 
 .registration-title {
@@ -245,11 +245,11 @@ body {
 }
 
 .family .family-slider .slick-next:before {
-  content: url("../../images/icons/arrow-button.png");
+  content: url("../images/icons/arrow-button.png");
 }
 
 .family .family-slider .slick-prev:before {
-  content: url("../../images/icons/prev-button-arrow.png");
+  content: url("../images/icons/prev-button-arrow.png");
 }
 
 .family .family-slider .slick-prev:before,
@@ -292,7 +292,7 @@ body {
   width: 101.7%;
   height: 950px;
   position: absolute;
-  background-image: url("../../images/background/background-winners.png");
+  background-image: url("../images/background/background-winners.png");
   background-size: cover;
 }
 
@@ -302,7 +302,7 @@ body {
   height: 220px;
   background-size: cover;
   z-index: -99;
-  background-image: url("../../images/background/footer-white-background.png");
+  background-image: url("../images/background/footer-white-background.png");
   width: 103%;
 }
 
@@ -355,7 +355,7 @@ body {
   width: 100%;
   background-size: cover;
   height: 205px;
-  background-image: url("../../images/background/footer-background.png");
+  background-image: url("../images/background/footer-background.png");
 }
 
 .input-number {
