@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="height=device-height, 
+                             width=device-width, initial-scale=1.0, 
+                             minimum-scale=1.0, maximum-scale=1.0, 
+                             user-scalable=no, target-densitydpi=device-dpi"
+    />
+    <title>Kinder</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:400,500,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body>
+    <div class="check-popup">
+      <div class="check-popup__box">
+        <div class="check-popup__top">
+          <div close-popup class="close-btn close-popup animate">
+            <img src="images/icons/close-x.png" alt="" />
+          </div>
+        </div>
+        <div class="check-popup__content">
+          <div class="check-popup__center">
+            <div class="heading-primary" style="font-size: 42px
+            ">
+              Отлично!
+            </div>
+            <div class="heading-tertuary">
+              Чек принят – сохрани его до конца акции. Ты можешь
+              зарегистрировать на свой номер телефона неограниченное количество
+              чеков.
+            </div>
+          </div>
+          <div class="check-popup__footer">
+            <button
+              style="font-family: 'Proxima Soft Black'; border: none;"
+              class="submit-btn animate close-popup"
+            >
+              Понятно
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="burger-menu-content">
+      <li><a href="#">Наша миссия</a></li>
+      <li><a href="#">Продукты</a></li>
+      <li><a href="#">Качество и ингридиенты</a></li>
+      <li><a href="#">Инициативы</a></li>
+      <li><a href="#">Мир Natoons</a></li>
+    </div>
+
+    <header class="header">
+      <nav class="header-nav">
+        <div class="header-nav__logo">
+          <img src="images/kinder-logo.png" alt="" />
+        </div>
+        <div class="header-nav__navigation">
+          <ul class="navigation-list">
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Наша миссия
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Продкуты
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Качество и ингридиенты
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Инициативы
+              </a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link">
+                Happos Family
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-burgermenu">
+          <img
+            class="header-burgermenu__img"
+            src="images/icons/burger-menu.png"
+            alt=""
+          />
+        </div>
+      </nav>
+      <div class="registration_container">
+        <div class="registration">
+          <div class="registration-title">
+            <div class="heading-primary">
+              Стань спортивным
+            </div>
+            <div class="heading-secondary">вместе с бегемотиками</div>
+            <div class="heading-primary">И ВЫИГРЫВАЙ ПРИЗЫ</div>
+            <img
+              class="registration-title__logo"
+              src="images/icons/The_Happos_Family.svg"
+              alt=""
+            />
+          </div>
+          <div class="u-max-width">
+            <div class="registration-descr">
+              <div class="heading-tertuary">
+                Знакомься с The Happos Family! Купи три или больше Kinder
+                Сюрприз с бегемотиками, отправь фото чека и участвуй в розыгрыше
+                спортивных подарков или сертификата на 100 000 тенге!
+              </div>
+            </div>
+          </div>
+          <div class="u-max-width">
+            <div class="registration-card">
+              <div style="margin-top: -10px" class="registration-card__title">
+                <div class="heading-secondary">
+                  номер телефона
+                </div>
+              </div>
+              <form action="#" class="registration-card__form">
+                <div class="u-display-center">
+                  <input
+                    class="input-number"
+                    type="tel"
+                    placeholder="+7(___) ___-__-__"
+                  />
+                  <span style="margin-left: -50px;" class="error-number"
+                    >*введите номер телефона</span
+                  >
+                </div>
+                <div class="photo-check">
+                  <div class="heading-secondary">Фото чека</div>
+                  <div id="asd" class="input-photo-box animate">
+                    <input id="inputPhoto" class="input-photo" type="file" />
+                    <img
+                      for="file"
+                      style="cursor: pointer;"
+                      src="images/icons/camera.png"
+                      alt=""
+                    />
+                  </div>
+                  <span style="margin-left: -75px;" class="error-check"
+                    >*загрузите фото чека</span
+                  >
+                </div>
+                <div class="registration-submit">
+                  <input
+                    type="submit"
+                    style="font-family: 'Proxima Soft Black'; border: none; padding-top: 2px;"
+                    class="form-btn submit-btn animate"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="family">
+      <div class="family-info">
+        <div class="family-info__img">
+          <img
+            class="u-position-absolute u-zindex--one "
+            src="images/photo/bg-family-info.png"
+            alt=""
+          />
+          <img
+            class="u-average-margin-right person-img"
+            src="images/photo/heavylifter-big.png"
+            alt=""
+          />
+        </div>
+        <div class="family-info__descr">
+          <div class="family-info__title">
+            <div class="heading-secondary family-info__title-text">
+              бегемотик
+            </div>
+            <div class="heading-primary family-info__title-text">
+              ТЯЖЕЛОАтЛЕТ
+            </div>
+          </div>
+          <div
+            class="u-average-margin-top heading-tertuary person-descr"
+          >
+            Если тебя во дворе называют «Силач», и ты всегда рвешься помочь маме
+            донести продукты до дома, тогда ты точно подружишься с Бегемотиком
+            Тяжелоатлетом. Он настолько силен, что способен сам донести до дома
+            свою уставшую после тяжелых тренировок семью.
+          </div>
+        </div>
+      </div>
+      <div class="family-title">
+        <div class="heading-secondary">
+          Знакомься со спортивной семейкой
+        </div>
+      </div>
+      <div class="family-slider">
+        <button id="button-prev" class="button-prev animate">
+          <img src="images/icons/prev-button-arrow.png" alt="" />
+        </button>
+        <!-- <div id="is-active__slider" class="is-active__slider"></div> -->
+        <div class="slider-content">
+          <div class="family-slider__elem">
+            <img src="images/person/thrower.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/football.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/athlet.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/heavylifter.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/fencer.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/gymnast.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/karate.png" alt="" />
+          </div>
+          <div class="family-slider__elem">
+            <img src="images/person/pirate.png" alt="" />
+          </div>
+        </div>
+        <button id="button-next" class="button-next animate">
+          <img src="images/icons/arrow-button.png" alt="" />
+        </button>
+      </div>
+    </section>
+
+    <section class="prizes">
+      <div class="prizes-title">
+        <div class="heading-primary">
+          ПРИЗЫ
+        </div>
+      </div>
+      <div class="prizes-boxs">
+        <div class="prizes-box">
+          <div class="prizes-box__img">
+            <img src="images/photo/prizes-puck.png" alt="" />
+          </div>
+          <div id="rightText" class="prizes-box__title">
+            <div class="heading-secondary">
+              КАЖДЫЕ 3 НЕДЕЛИ
+            </div>
+            <div class="heading-tertuary">
+              спортивные наборы
+            </div>
+          </div>
+        </div>
+
+        <div class="prizes-box">
+          <div class="prizes-box__img">
+            <img src="images/photo/certificate.png" alt="" />
+          </div>
+          <div id="leftText" class="prizes-box__title">
+            <div class="heading-secondary">
+              ГЛАВНЫЙ ПРИЗ
+            </div>
+            <div class="heading-tertuary">
+              сертификат на 100 000 тенге
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="prizes-box"></div>
+    </section>
+
+    <section class="winners">
+      <div class="winners-title">
+        <div style="margin-bottom: 20px;" class="heading-primary">
+          Победители
+        </div>
+        <div class="heading-secondary">
+          розыгрыша СПОРТИВНЫХ НАБОРОВ
+        </div>
+      </div>
+
+      <div class="winners-practical__jokes">
+        <div class="winners-numbers__box">
+          <div class="heading-tertuary winners-box__data">
+            21 октрября
+          </div>
+          <div class="winners-numbers">
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+          </div>
+        </div>
+        <div class="winners-numbers__box">
+          <div class="heading-tertuary winners-box__data">
+            11 ноября
+          </div>
+          <div class="winners-numbers">
+            <div class="heading-tertuary">
+              Успей отправить чек до нового розыгрыша!
+            </div>
+            <!-- <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div>
+            <div class="heading-tertuary">+7 707 ***-12-34</div> -->
+          </div>
+        </div>
+        <div class="winners-numbers__box">
+          <div class="heading-tertuary winners-box__data">
+            2 декабря
+          </div>
+        </div>
+      </div>
+      <div class="winners-white__background">
+        <div class="practical-jokes">
+          <div class="practical-jokes__title">
+            <div style="font-size: 30px;" class="heading-secondary">
+              розыгрыш сертификата на 100 000 тенге
+            </div>
+            <div
+              style="font-size: 20px; margin-top: 20px;"
+              class="heading-tertuary"
+            >
+              Может это ты? Победитель станет известен 2 декабря.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="winners-background">
+        <img
+          class="winners-background__athletics"
+          src="images/photo/winners-athletics.png"
+          alt=""
+        />
+        <img
+          class="winners-background__message"
+          src="images/photo/winners-message.png"
+          alt=""
+        />
+        <img
+          id="rightIcon"
+          class="winners-message"
+          src="images/icons/message-winners.png"
+          alt=""
+        />
+      </div>
+      <!-- <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="footer-logo__title">
+              FERRERO
+            </div>
+            <div class="footer-logo__descr">
+              &copy; Ferrero 2019 - All rights reserved
+            </div>
+          </div>
+          <div class="footer-nav">
+            <div class="footer-nav__item">
+              <a href="">Потребительская линия</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="">Технические параметры</a>
+            </div>
+            <div class="footer-nav__item"><a href="">Карта сайта</a></div>
+            <div class="footer-nav__item">
+              <a href="">FERRERO FOODSERVICE</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="">Политика в отношении обработки персональных данных</a>
+            </div>
+            <div class="footer-nav__item">
+              <a href="">Правила рекламной акции</a>
+            </div>
+          </div>
+          <div class="footer-earth">
+            <img src="images/icons/earth-footer.png" alt="" />
+          </div>
+        </div>
+      </footer> -->
+    </section>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/dependencyLibs/inputmask.dependencyLib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/inputmask/inputmask.min.js"></script>
+    <script src="scripts/family-slick-slider.js"></script>
+    <script src="scripts/masks.js"></script>
+    <script src="scripts/animated.js"></script>
+    <script src="scripts/popup.js"></script>
+    <script src="scripts/error-form.js"></script>
+  </body>
+</html>
