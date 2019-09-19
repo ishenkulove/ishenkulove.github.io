@@ -41,7 +41,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-image: url("../../images/background/main-background.png");
+  background-image: url("images/background/main-background.png");
   background-size: cover;
   overflow-x: hidden;
 }
@@ -50,28 +50,28 @@ body {
   font-family: "Noteworthy";
   font-style: normal;
   font-weight: normal;
-  src: url("../../typography/Noteworthy-Lt.ttf");
+  src: url("typography/Noteworthy-Lt.ttf");
 }
 
 @font-face {
   font-family: "Proxima Soft Black";
   font-style: bold;
   font-weight: bold;
-  src: url("../../typography/Mark Simonson - Proxima Soft Black.ttf");
+  src: url("typography/Mark Simonson - Proxima Soft Black.ttf");
 }
 
 @font-face {
   font-family: "Proxima Soft Extrabold";
   font-style: normal;
   font-weight: normal;
-  src: url("../../typography/Mark Simonson - Proxima Soft Cond Extrabold.ttf");
+  src: url("typography/Mark Simonson - Proxima Soft Cond Extrabold.ttf");
 }
 
 @font-face {
   font-family: "Proxima Soft";
   font-style: normal;
   font-weight: normal;
-  src: url("../../typography/Mark Simonson - Proxima Soft.ttf");
+  src: url("typography/Mark Simonson - Proxima Soft.ttf");
 }
 
 .heading-primary {
@@ -227,7 +227,7 @@ body {
   width: 1172px;
   height: 681px;
   background-size: cover;
-  background-image: url("../../images/background/registration.png");
+  background-image: url("images/background/registration.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -592,7 +592,7 @@ body {
   width: 100%;
   height: 1010px;
   position: absolute;
-  background-image: url("../../images/background/winners-bacground.png");
+  background-image: url("images/background/winners-bacground.png");
   background-size: cover;
   background-position: center;
 }
@@ -622,7 +622,7 @@ body {
   margin: 6% 0 0;
   background-size: cover;
   z-index: -99;
-  background-image: url("../../images/background/footer-white-background.png");
+  background-image: url("images/background/footer-white-background.png");
   background-position: top;
 }
 
@@ -830,7 +830,7 @@ body {
   color: #ffffff;
   max-width: 100%;
   background-size: cover;
-  background-image: url("../../images/background/footer-red.png");
+  background-image: url("images/background/footer-red.png");
 }
 
 .footer-content {
@@ -868,7 +868,7 @@ body {
 
 @media (max-width: 1200px) {
   .footer {
-    background-image: url("../../images/background/footer-background__mobile.png");
+    background-image: url("images/background/footer-background__mobile.png");
   }
 
   .footer-content {
