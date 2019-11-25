@@ -18,26 +18,26 @@ body {
 
 @font-face {
   font-family: "Gilroy SemiBold";
-  src: url("../../font/Gilroy-Semibold.ttf");
-  src: url("../../font/Gilroy-Semibold.woff") format("woff");
+  src: url("../font/Gilroy-Semibold.ttf");
+  src: url("../font/Gilroy-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Medium";
-  src: url("../../font/Gilroy-Medium.ttf");
-  src: url("../../font/Gilroy-Medium.woff") format("woff");
+  src: url("../font/Gilroy-Medium.ttf");
+  src: url("../font/Gilroy-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Bold";
-  src: url("../../font/Gilroy-Bold.ttf");
-  src: url("../../font/Gilroy-Bold.woff") format("woff");
+  src: url("../font/Gilroy-Bold.ttf");
+  src: url("../font/Gilroy-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Regular";
-  src: url("../../font/Gilroy-Regular.ttf");
-  src: url("../../font/Gilroy-Regular.woff") format("woff");
+  src: url("../font/Gilroy-Regular.ttf");
+  src: url("../font/Gilroy-Regular.woff") format("woff");
 }
 
 body {
@@ -141,8 +141,8 @@ body {
 .header {
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../../assets/photo/header-bg.png");
-  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../../assets/photo/header-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../assets/photo/header-bg.png");
+  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../assets/photo/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -159,8 +159,8 @@ body {
 }
 
 .header2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../../assets/photo/kol-tor.png");
-  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../../assets/photo/kol-tor.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../assets/photo/kol-tor.png");
+  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../assets/photo/kol-tor.png");
   clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 68% 95%, 30% 100%, 0 93%, 0% 30%);
 }
 
@@ -314,7 +314,7 @@ body {
   justify-content: space-between;
   width: 100%;
   padding: 8rem 8.3rem 3rem 8.3rem;
-  background-image: url("../../assets/photo/footer.png");
+  background-image: url("../assets/photo/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -564,7 +564,7 @@ body {
 }
 
 .card-picture__1 {
-  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%), url("../../assets/photo/nat-1.png");
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%), url("../assets/photo/nat-1.png");
 }
 
 .card-heading {
@@ -641,8 +641,8 @@ body {
 
 .book {
   height: 46rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 28, 60, 0.8)), to(rgba(84, 84, 84, 0.604))), url("../../assets/photo/form-bg.png");
-  background-image: linear-gradient(180deg, rgba(19, 28, 60, 0.8) 0%, rgba(84, 84, 84, 0.604) 100%), url("../../assets/photo/form-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 28, 60, 0.8)), to(rgba(84, 84, 84, 0.604))), url("../assets/photo/form-bg.png");
+  background-image: linear-gradient(180deg, rgba(19, 28, 60, 0.8) 0%, rgba(84, 84, 84, 0.604) 100%), url("../assets/photo/form-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
