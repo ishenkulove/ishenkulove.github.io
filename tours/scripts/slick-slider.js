@@ -5,4 +5,5 @@ $(".slider").slick({
   speed: 500
 });
 
+$(".reviews-slider").slick({});
 
