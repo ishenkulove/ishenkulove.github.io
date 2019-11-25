@@ -18,26 +18,26 @@ body {
 
 @font-face {
   font-family: "Gilroy SemiBold";
-  src: url("../font/Gilroy-Semibold.ttf");
-  src: url("../font/Gilroy-Semibold.woff") format("woff");
+  src: url("../../font/Gilroy-Semibold.ttf");
+  src: url("../../font/Gilroy-Semibold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Medium";
-  src: url("../font/Gilroy-Medium.ttf");
-  src: url("../font/Gilroy-Medium.woff") format("woff");
+  src: url("../../font/Gilroy-Medium.ttf");
+  src: url("../../font/Gilroy-Medium.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Bold";
-  src: url("../font/Gilroy-Bold.ttf");
-  src: url("../font/Gilroy-Bold.woff") format("woff");
+  src: url("../../font/Gilroy-Bold.ttf");
+  src: url("../../font/Gilroy-Bold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Regular";
-  src: url("../font/Gilroy-Regular.ttf");
-  src: url("../font/Gilroy-Regular.woff") format("woff");
+  src: url("../../font/Gilroy-Regular.ttf");
+  src: url("../../font/Gilroy-Regular.woff") format("woff");
 }
 
 body {
@@ -130,23 +130,19 @@ body {
   padding: 12rem 8.3rem;
 }
 
+.section-booking {
+  margin-top: 10rem;
+}
+
+.section-preview {
+  padding: 12rem 8.3rem;
+}
+
 .header {
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(#2e3c50),
-      to(rgba(46, 60, 80, 0.6))
-    ),
-    url("../assets/photo/header-bg.png");
-  background-image: linear-gradient(
-      180deg,
-      #2e3c50 0%,
-      rgba(46, 60, 80, 0.6) 100%
-    ),
-    url("../assets/photo/header-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../../assets/photo/header-bg.png");
+  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../../assets/photo/header-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -160,6 +156,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+}
+
+.header2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2e3c50), to(rgba(46, 60, 80, 0.6))), url("../../assets/photo/kol-tor.png");
+  background-image: linear-gradient(180deg, #2e3c50 0%, rgba(46, 60, 80, 0.6) 100%), url("../../assets/photo/kol-tor.png");
+  clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 68% 95%, 30% 100%, 0 93%, 0% 30%);
 }
 
 .row {
@@ -195,7 +197,8 @@ body {
 }
 
 .row .col-2-of-3 {
-  width: calc((2 * (100% - 2 * 6rem) / 3) + 6rem);
+  width: calc(
+ (2 * (100% - 2 * 6rem) / 3) + 6rem);
 }
 
 .row .col-1-of-4 {
@@ -203,11 +206,13 @@ body {
 }
 
 .row .col-2-of-4 {
-  width: calc((2 * (100% - 3 * 6rem) / 4) + 6rem);
+  width: calc(
+ (2 * (100% - 3 * 6rem) / 4) + 6rem);
 }
 
 .row .col-3-of-4 {
-  width: calc((3 * (100% - 3 * 6rem) / 4) + 2 * 6rem);
+  width: calc(
+ (3 * (100% - 3 * 6rem) / 4) + 2 * 6rem);
 }
 
 .navigation {
@@ -222,6 +227,8 @@ body {
   justify-content: space-between;
   background: transparent;
   padding: 2.6rem 8.3rem;
+  width: 100%;
+  z-index: 99999;
 }
 
 .navigation-left {
@@ -307,7 +314,7 @@ body {
   justify-content: space-between;
   width: 100%;
   padding: 8rem 8.3rem 3rem 8.3rem;
-  background-image: url("../assets/photo/footer.png");
+  background-image: url("../../assets/photo/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -381,8 +388,8 @@ body {
 .btn:hover {
   -webkit-transform: translateY(-0.3rem);
   transform: translateY(-0.3rem);
-  -webkit-box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1rem 2rem rgba(60, 171, 219, 0.4);
+  box-shadow: 0px 1rem 2rem rgba(60, 171, 219, 0.4);
 }
 
 .btn:hover::after {
@@ -517,7 +524,7 @@ body {
   left: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border-radius: 0.3rem;
+  border-radius: 1rem;
   overflow: hidden;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -552,13 +559,12 @@ body {
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
 }
 
 .card-picture__1 {
-  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%),
-    url("../assets/photo/nat-1.png");
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%), url("../../assets/photo/nat-1.png");
 }
 
 .card-heading {
@@ -576,6 +582,7 @@ body {
 
 .card-heading__span {
   padding: 1rem 1.5rem;
+  border-radius: 10px;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
@@ -634,20 +641,8 @@ body {
 
 .book {
   height: 46rem;
-  background-image: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(19, 28, 60, 0.8)),
-      to(rgba(84, 84, 84, 0.604))
-    ),
-    url("../assets/photo/form-bg.png");
-  background-image: linear-gradient(
-      180deg,
-      rgba(19, 28, 60, 0.8) 0%,
-      rgba(84, 84, 84, 0.604) 100%
-    ),
-    url("../assets/photo/form-bg.png");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(19, 28, 60, 0.8)), to(rgba(84, 84, 84, 0.604))), url("../../assets/photo/form-bg.png");
+  background-image: linear-gradient(180deg, rgba(19, 28, 60, 0.8) 0%, rgba(84, 84, 84, 0.604) 100%), url("../../assets/photo/form-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -713,6 +708,7 @@ body {
   width: 280px;
   font-family: "Gilroy Medium";
   padding: 1rem 3rem;
+  font-size: 1.6rem;
   border-radius: 25px;
   border: none;
   outline: none;
@@ -750,80 +746,71 @@ body {
   padding: 1.3rem 3rem;
 }
 
-.slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  margin-left: 2rem;
-  width: 110rem;
-  height: 400px;
-  margin: 0 auto;
+.preview {
+  background: red;
 }
 
-.slider-box__img {
-  -webkit-box-sizing: border-box;
+.slider-wr {
+  width: 90%;
+  padding: 0 8px;
+  margin: 20px auto;
   box-sizing: border-box;
-  width: 100%;
-  border-radius: 2.5rem;
 }
 
-.slick-center {
-  width: 450px !important;
-  opacity: 1 !important;
-  padding: 0rem !important;
+.slide {
+  padding: 0 8px;
+  box-sizing: border-box;
 }
 
-.slick-slide {
-  opacity: 0.6;
-  padding: 4rem;
+.slide img {
+  max-width: 100%;
+  position: relative;
+  transform: scale(0.7);
+  transition: all 1s ease-out;
+  opacity: 0.5;
+  border-radius: 4rem;
 }
 
-.slick-track {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+.slide.slick-center img {
+  transform: scale(0.9);
+  transition: all 1s ease-out;
+  opacity: 1;
 }
 
 .slick-next {
-  z-index: 99999;
-  background: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
-  width: 62px;
-  height: 62px;
+  z-index: 4;
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
+  width: 61px;
+  height: 61px;
+  right: 100px;
   border-radius: 50%;
-}
-
-.slick-next::before {
-  content: url("../assets/icons/arrow-right.svg");
 }
 
 .slick-next:hover,
 .slick-next:focus {
-  background: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
+}
+
+.slick-next::before {
+  margin-left: 0.5rem;
+  content: url("../assets/icons/arrow-right.svg");
 }
 
 .slick-prev {
-  z-index: 99999;
-  background: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
-  width: 62px;
-  height: 62px;
+  z-index: 4;
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
+  width: 61px;
+  height: 61px;
+  left: 100px;
   border-radius: 50%;
-}
-
-.slick-prev::before {
-  content: url("../assets/icons/arrow-left.svg");
 }
 
 .slick-prev:hover,
 .slick-prev:focus {
-  background: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
+  background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
 }
 
-option {
-  background: red;
+.slick-prev::before {
+  margin-right: 0.5rem;
+  content: url("../assets/icons/arrow-left.svg");
 }
