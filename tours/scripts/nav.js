@@ -27,18 +27,20 @@
 
   let navOption = document.querySelector(".navigation-options__list").children;
   $(navOption).click(function() {
-
     activeItem(navOption, this, "active-item");
   });
 
   $(document).height() - $(window).height() - $(window).scrollTop();
   $(window).scroll(function() {
     var topheight = $(window).scrollTop();
-    if (topheight >= 900 && topheight <= 1599) {
+    
+    if (topheight >= 900 && topheight <= 1699) {
       activeItem(navOption, navOption[0], "active-item");
-    } else if ((topheight >= 1600) & (topheight <= 2299)) {
+    } else if ((topheight >= 1700) & (topheight <= 2350)) {
       activeItem(navOption, navOption[1], "active-item");
-    } else if (topheight >= 2490) {
+    } else if ((topheight >= 2355) & (topheight <= 3050)) {
+      activeItem(navOption, navOption[2], "active-item");
+    } else if (topheight >= 3300) {
       activeItem(navOption, navOption[3], "active-item");
     } else {
       activeItem(navOption, this, "active-item");
