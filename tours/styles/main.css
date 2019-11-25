@@ -131,11 +131,15 @@ body {
 }
 
 .section-booking {
-  margin-top: 10rem;
+  margin-top: 20rem;
 }
 
-.section-preview {
-  padding: 12rem 8.3rem;
+.section-gallary {
+  margin-top: 5rem;
+}
+
+.section-reviews {
+  margin-top: 15rem;
 }
 
 .header {
@@ -752,6 +756,41 @@ body {
   background: red;
 }
 
+.reviews {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.reviews-slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews-img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.reviews-sub {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  color: #2e3c50;
+  font-size: 1.8rem;
+  font-family: "Gilroy Medium";
+  margin-bottom: 1.5rem;
+}
+
+.reviews-author {
+  font-size: 1.8rem;
+  font-family: "Gilroy Bold";
+  color: #2e3c50;
+}
+
 .slider-wr {
   width: 90%;
   padding: 0 8px;
@@ -784,7 +823,7 @@ body {
   background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
   width: 61px;
   height: 61px;
-  right: 100px;
+  right: 55px;
   border-radius: 50%;
 }
 
@@ -803,7 +842,7 @@ body {
   background-image: linear-gradient(154.19deg, #108ac0 13.63%, #57bce8 90.77%);
   width: 61px;
   height: 61px;
-  left: 100px;
+  left: 55px;
   border-radius: 50%;
 }
 
