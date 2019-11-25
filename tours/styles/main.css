@@ -293,6 +293,8 @@ body {
   font-family: "Gilroy Medium";
   font-size: 1.5rem;
   text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
   cursor: pointer;
   border-bottom: 2px solid transparent;
   padding-bottom: 3px;
