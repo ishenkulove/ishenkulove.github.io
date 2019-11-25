@@ -16,7 +16,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"
     />
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/main.min.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -43,10 +43,12 @@
         <div class="navigation-right">
           <div class="navigation-options">
             <ul class="navigation-options__list">
-              <li class="navigation-options__item active-item">Услуги</li>
-              <li class="navigation-options__item">Галерея</li>
-              <li class="navigation-options__item">Отзывы</li>
-              <li class="navigation-options__item">Контакты</li>
+              <a href="#services" class="navigation-options__item"
+                >Услуги</a
+              >
+              <a href="#gallary" class="navigation-options__item">Галерея</a>
+              <a href="#" class="navigation-options__item">Отзывы</a>
+              <a href="#contacts" class="navigation-options__item">Контакты</a>
             </ul>
             <!-- /.navigation-options__list -->
           </div>
@@ -68,7 +70,7 @@
       </div>
       <!-- ./header-text__box -->
       <div class="btn-more__box">
-        <a href="#" class="btn-more">
+        <a href="#" id="services" class="btn-more">
           <img src="./assets/icons/arrow-down.svg" alt="" />
         </a>
       </div>
@@ -184,7 +186,7 @@
           </div>
 
           <div class="u-center-text u-margin-top-huge">
-            <a href="#" class="btn btn-blue">Показать больше</a>
+            <a href="#" id="gallary" class="btn btn-blue">Показать больше</a>
           </div>
         </div>
         <!-- ./tour -->
@@ -346,6 +348,7 @@
                   </div>
                 </div>
                 <div class="u-center-text u-margin-top-medium">
+                  <a href="#" id="contacts"></a>
                   <button class="btn btn-blue form-button">
                     Отправить
                   </button>
